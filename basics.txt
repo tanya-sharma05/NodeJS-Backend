@@ -1,0 +1,9 @@
+1. Node JS is a runtime environment to run JavaScript outside our browser.
+2. It uses V8 engine and C++ APIs (libuv (C++ library))
+3. FRONTEND -> React JS (library)
+4. BACKEND -> Express JS (framework) 
+5. Node JS is single-threaded -> only 1 line can execute at a time.
+6. Synchronous (Blocking) -> Each task waits for the previous task to finish.
+7. Asynchronous (Non-blocking) -> Does not waits (Node's Event Loop + Callback Queue handles async operations)
+    (V8 executes JS code and libuv handles async tasks)
+    Node.js has 4 threads in the thread pool (a group of worker threads available to perform tasks)
