@@ -1,13 +1,12 @@
-
 # Middlewares
 
-A middleware is a function that sits between an incoming HTTP request and the final route handler (or next middleware). 
+Middleware functions are functions that have access to the request object (req) and response object (res) and the next middleware function in the applications's request response cycle. The next middleware function is commonly denoted by variable named next. 
 
-It can:
-- modify req and res
-- end the request (send a response)
-- call next() to pass control to the next middleware/handler
-- call next(err) to pass an error to the error-handler middleware
+Middleware functions can perform the following tasks:
+- Execute any code.
+- Make changes to the request and response objects.
+- End the request response cycle.
+- Call the next middleware function in the stack.
 
 Normal Middleware
 
@@ -71,6 +70,3 @@ Error handling Middleware
 - Authentication (JWT,session guards)
 
 - Validation (Joi,express-validator)
-
-
-

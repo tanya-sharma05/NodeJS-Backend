@@ -1,0 +1,5 @@
+1765600322133: GET /api/users
+1765600340192: GET /api/users/7
+1765600367774: POST /api/users
+1765600392382: PATCH /api/users/1
+1765600447736: ::1 GET /api/users

@@ -7,6 +7,12 @@ const port= 8000;
 // middleware used as plugin
 app.use(express.urlencoded({extended: false}));
 
+/* This middleware is used to parse form data sent through HTML form tags. When this form is submitted, 
+   the browser sends data in URL-encoded format.
+   Express does NOT parse this automatically, so req.body would be undefined without this middleware.
+   It converts URL-encoded request body → into a JavaScript object and puts it inside req.body.
+*/
+
 // ---------------------------------------------------------------------------------------------------
 /* A hybrid server does 2 jobs:
    1. at "/users": render an html page (SSR), when it knows that surely a browser is a client
